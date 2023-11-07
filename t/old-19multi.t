@@ -113,6 +113,6 @@ sub action_wait {
     @fds = $curlm->fdset;
     ok( ! $fds[0] && ! $fds[1] && !$fds[2] , "The three returned arrayrefs are empty after we have no active transfers");
     ok($header, "Header reply exists from first handle");
-    ok($body, "Body reply exists from second handle");
+    ok($body, "Body reply exists from first handle");
     ok($header2, "Header reply exists from second handle");
     ok($body2, "Body reply exists from second handle");
